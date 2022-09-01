@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 
 * {
     padding: 0;
@@ -6,47 +7,84 @@
 }
 
 body {
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsla(0, 0%, 100%, 0.75);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
 }
 
 .cards {
     display: flex;
-    align-items: center;
     width: auto 0;
-    padding: 11rem;
-}
-
-h3 {
-    font-family: 'Big Shoulders Display', cursive;
-    color: white;
-    margin: 1rem 0;
-}
-
-.card-01, .card-02, .card-03 {
-    padding: 2rem;
-    font-family: 'Lexend Deca', sans-serif;
 }
 
 .card-01 {
     background-color: hsl(31, 77%, 52%);
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px 0 0 8px;
 }
 
 .card-02 {
     background-color: hsl(184, 100%, 22%);
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .card-03 {
     background-color: hsl(179, 100%, 13%);
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0 8px 8px 0px;
+}
+
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 1rem 0;
+    font-size: 34px;
+    text-transform: uppercase;
 }
 
 .text {
+    font-family: 'Lexend Deca', sans-serif;
     text-align:left;
     margin-bottom: 1rem;
+    padding: 0 0 2rem 0;
+    font-weight: 600;
+    font-size: 11px;
+    color:hsla(0, 0%, 100%, 0.75)
 }
 
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    background-color: hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 15px 32px;
+    border-radius: 24px;
+    transition-duration: 0.4s;
+    border: 1px solid hsl(0, 0%, 95%);
+}
 
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+}
 
+.botao-01 {
+    color: hsl(31, 77%, 52%);
+}
 
+.botao-02 {
+    color: hsl(184, 100%, 22%);
+}
+
+.botao-03 {
+    color:  hsl(179, 100%, 13%);
+}
